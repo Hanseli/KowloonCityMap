@@ -37,6 +37,8 @@ html
                           src="assets/asset9.glb"></a-asset-item>
             <a-asset-item id="animated-asset10"
                           src="assets/asset10.glb"></a-asset-item>
+            <a-asset-item id="animated-asset11"
+                          src="assets/asset11.png"></a-asset-item>
 
         </a-assets>
 
@@ -190,6 +192,20 @@ html
                       gesture-handler></a-entity>
         </a-marker>
 
+        <a-marker id="animated-marker"
+                  type="pattern"
+                  preset="custom"
+                  url="assets/marker11.patt"
+                  raycaster="objects: .clickable"
+                  emitevents="true"
+                  cursor="fuse: false; rayOrigin: mouse;"
+                  
+            <a-image src="assets/asset11.png"
+                     scale="1 1 1"
+                     class="clickable"
+                     rotation="-90 0 0"
+                     gesture-handler></a-image>
+        </a-marker>
 
         <a-entity camera></a-entity>
     </a-scene>
